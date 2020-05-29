@@ -2,12 +2,6 @@
 airush2 dataloader and evaluator for nsml leader board
 # Click-Through rate Prediction
 
-<img src="../img/img_1.png"></img><br/>
-
-<img src="../img/img_2.png"></img><br/>
-
-<img src="../img/img_3.png"></img><br/>
-
 ### 1. 설명 Description
 CTR prediction trains a model on features such as the user's gender, age, geography, and ad exposure time,
 The problem of predicting whether or not to click an ad is a very successful task.
@@ -28,4 +22,12 @@ Feature specification: (label - label, article_id - image file name, hh - an exp
                         Extracted image feature using ResNet50
 evaluation metric : F1 score
 ```
+
+<img src="../img/img_1.png"></img><br/>
+
+<img src="../img/img_2.png"></img><br/>
+
+<img src="../img/img_3.png"></img><br/>
+
+
 
