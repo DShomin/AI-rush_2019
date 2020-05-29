@@ -2,6 +2,11 @@
 airush2 dataloader and evaluator for nsml leader board
 # Click-Through rate Prediction
 
+<img src="../img/img_1.png"></img><br/>
+
+<img src="../img/img_2.png"></img><br/>
+
+<img src="../img/img_3.png"></img><br/>
 
 ### 1. 설명 Description
 CTR prediction trains a model on features such as the user's gender, age, geography, and ad exposure time,
@@ -24,42 +29,3 @@ Feature specification: (label - label, article_id - image file name, hh - an exp
 evaluation metric : F1 score
 ```
 
-The baseline model is a multi-layer perceptron model that is trained by concating only image features extracted from the ResNet50 model and (hh, gender, age_range) together.
-VGG16 model is included for convenience.
-
-<br/>
-
-### 2. 사용법 Usage
-
-#### How to run
-
-To train your emotion classifier on the dataset "airush2", run the command below.
-
-```
-nsml run -d airush2 --shm-size 16G -e main.py
-```
-
-#### How to check session logs
-```
-nsml logs -f [SESSION_NAME] 
-# e.g., nsml logs -f nsmlteam/airush2/1
-```
-
-#### How to list checkpoints saved
-You can search model checkpoints by using the following command:
-```
-nsml model ls nsmlteam/airush2/[session number]
-# e.g. nsml model ls nsmlteam/airush2/1
-```
-
-#### How to submit
-The following command is an example of running the evaluation code using the model checkpoint where you get your best loss.
-```
-nsml submit nsmlteam/airush2/[session number] [checkpoint name]
-# e.g. nsml submit nsmlteam/airush2/1 best_loss
-```
-
-#### How to check leaderboard
-```
-nsml dataset board airush2
-```
