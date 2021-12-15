@@ -1,5 +1,6 @@
 # AI-rush_2019
-langage + meta data + image
+- keyward
+langage, meta data, image, multi-modal
 
 ## Method
 
